@@ -1,5 +1,5 @@
 {% set name = "sophios" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PolusAI/workflow-inference-compiler/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 4a2442f8e2cd4df257ccbf0405a2e1a85220af1b96cc24d71c843d80cfd5332b
+  sha256: 168f36e8ddd0bada325d834880f6ac5ea5b1254a6dd25f1c8e9e520888b53162
 
 build:
   noarch: python
