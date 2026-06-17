@@ -9,7 +9,7 @@ Package license: MIT
 
 Summary: DSL for inferring the edges of a CWL workflow DAG
 
-Development: https://github.com/PolusAI/workflow-inference-compiler
+Development: https://github.com/PolusAI/sophios
 
 Current build status
 ====================
@@ -146,4 +146,3 @@ Feedstock Maintainers
 =====================
 
 * [@sameeul](https://github.com/sameeul/)
-
