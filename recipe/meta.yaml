@@ -1,5 +1,5 @@
 {% set name = "sophios" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PolusAI/workflow-inference-compiler/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 4a2442f8e2cd4df257ccbf0405a2e1a85220af1b96cc24d71c843d80cfd5332b
+  sha256: cafead1cf0da4c97d149bc11b97d834a1c67362c77de6ff515b111e512224041
 
 build:
   noarch: python
@@ -26,9 +26,10 @@ requirements:
     - python >={{ python_min }}
     - python-graphviz
     - jsonschema
+    - cwltool
     - toil
     - pyyaml
-    - requests <=2.31.0
+    - requests
     - mergedeep
     - networkx
     - cwl-utils >=0.32
@@ -41,7 +42,8 @@ requirements:
     - podman-py
     - python-jose
     - uvicorn
-    - orjson
+    - referencing
+    - aiofiles
 
 test:
   imports:
