@@ -1,13 +1,13 @@
 {% set name = "sophios" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/PolusAI/workflow-inference-compiler/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: cafead1cf0da4c97d149bc11b97d834a1c67362c77de6ff515b111e512224041
+  url: https://github.com/PolusAI/sophios/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: af4d0bf3128fce8284b12229f6a2377597c78ca4f26e99b3fb9e5af239d60312
 
 build:
   noarch: python
@@ -33,14 +33,11 @@ requirements:
     - mergedeep
     - networkx
     - cwl-utils >=0.32
-    - typeguard
     - pydantic >=2.6
-    - pydantic-settings
     - ruamel.yaml.clib
     - fastapi
     - docker-py
     - podman-py
-    - python-jose
     - uvicorn
     - referencing
     - aiofiles
@@ -58,7 +55,7 @@ test:
 about:
   home: https://pypi.org/project/sophios/
   summary: DSL for inferring the edges of a CWL workflow DAG
-  dev_url: https://github.com/PolusAI/workflow-inference-compiler
+  dev_url: https://github.com/PolusAI/sophios
   license: MIT
   license_file: LICENSE
 
