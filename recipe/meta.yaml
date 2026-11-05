@@ -1,5 +1,5 @@
 {% set name = "sophios" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PolusAI/sophios/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 0da3834f29afce4b1af8b1655865bf269f318736d367605928df5b09b853cbde
+  sha256: 7029fc25d70779aa42a170fbbbb65b2bf81adf314447b0de831609ce568ec116
 
 build:
   noarch: python
